@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">机器学习学习路线图</title>
+  <desc id="desc">从基础、经典模型、无监督学习到工程流程的机器学习 Notebook 路线，15 到 17 章为归档专题。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#101d35"/>
+    </linearGradient>
+    <linearGradient id="active" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#2f6bff"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087f8c"/>
+      <stop offset="1" stop-color="#16a8a8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .title { font: 700 36px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #f8fafc; }
+      .subtitle { font: 400 16px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #a9b8d0; }
+      .section { font: 700 15px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #9fb3d5; letter-spacing: 1.5px; }
+      .cardTitle { font: 700 17px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #ffffff; }
+      .cardSub { font: 400 13px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #c7d6ee; }
+      .num { font: 700 12px 'Segoe UI', sans-serif; fill: #dbeafe; }
+      .archiveTitle { font: 700 17px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #ffe7bd; }
+      .archiveSub { font: 400 13px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #f3d6a4; }
+      .footer { font: 400 14px 'Segoe UI', 'Microsoft YaHei', sans-serif; fill: #94a3b8; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" rx="24" fill="url(#bg)"/>
+  <circle cx="1470" cy="78" r="180" fill="#2f6bff" opacity="0.08"/>
+  <circle cx="86" cy="820" r="220" fill="#16a8a8" opacity="0.06"/>
+
+  <text x="80" y="76" class="title">机器学习学习路线</text>
+  <text x="80" y="108" class="subtitle">从原理推导到统一评估，再到可复现的项目实践 · 18 个 Notebook · 当前主线 01–14</text>
+  <line x1="80" y1="136" x2="1520" y2="136" stroke="#263753" stroke-width="1"/>
+
+  <text x="80" y="178" class="section">01 · 基础</text>
+  <text x="430" y="178" class="section">02 · 经典模型</text>
+  <text x="930" y="178" class="section">03 · 从模型到流程</text>
+
+  <path d="M350 270 H410" stroke="#5c7cff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M870 270 H910" stroke="#5c7cff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M870 405 H910" stroke="#5c7cff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M870 540 H910" stroke="#5c7cff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1390 540 C1440 540 1430 690 1370 690" stroke="#e7a548" stroke-width="2.5" stroke-dasharray="7 7" fill="none"/>
+  <path d="M1390 540 C1460 540 1460 770 1370 770" stroke="#e7a548" stroke-width="2.5" stroke-dasharray="7 7" fill="none"/>
+  <path d="M1390 540 C1490 540 1490 850 1370 850" stroke="#e7a548" stroke-width="2.5" stroke-dasharray="7 7" fill="none"/>
+
+  <a href="../01_%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/01_linear_regression.ipynb">
+    <rect x="80" y="215" width="270" height="110" rx="18" fill="url(#active)" filter="url(#shadow)"/>
+    <circle cx="116" cy="253" r="20" fill="#ffffff" opacity="0.16"/><text x="106" y="258" class="num">01</text>
+    <text x="150" y="254" class="cardTitle">线性回归</text><text x="150" y="280" class="cardSub">损失 · 梯度 · 正则化</text>
+  </a>
+  <a href="../02_%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/02_logistic_regression.ipynb">
+    <rect x="80" y="355" width="270" height="110" rx="18" fill="url(#teal)" filter="url(#shadow)"/>
+    <circle cx="116" cy="393" r="20" fill="#ffffff" opacity="0.16"/><text x="106" y="398" class="num">02</text>
+    <text x="150" y="394" class="cardTitle">逻辑回归</text><text x="150" y="420" class="cardSub">概率 · 交叉熵 · 阈值</text>
+  </a>
+  <path d="M215 325 V355" stroke="#5c7cff" stroke-width="3" stroke-linecap="round"/>
+
+  <a href="../03_%E5%86%B3%E7%AD%96%E6%A0%91/03_decision_tree.ipynb"><rect x="430" y="215" width="200" height="90" rx="16" fill="#172b52" stroke="#527cff" stroke-width="1.5"/><text x="458" y="250" class="num">03</text><text x="500" y="251" class="cardTitle">决策树</text><text x="458" y="278" class="cardSub">切分与剪枝</text></a>
+  <a href="../04_%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF/04_naive_bayes.ipynb"><rect x="650" y="215" width="200" height="90" rx="16" fill="#172b52" stroke="#527cff" stroke-width="1.5"/><text x="678" y="250" class="num">04</text><text x="720" y="251" class="cardTitle">朴素贝叶斯</text><text x="678" y="278" class="cardSub">概率与平滑</text></a>
+  <a href="../05_%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/05_svm.ipynb"><rect x="430" y="350" width="200" height="90" rx="16" fill="#172b52" stroke="#527cff" stroke-width="1.5"/><text x="458" y="385" class="num">05</text><text x="500" y="386" class="cardTitle">支持向量机</text><text x="458" y="413" class="cardSub">间隔与核技巧</text></a>
+  <a href="../06_K%E8%BF%91%E9%82%BB/06_knn.ipynb"><rect x="650" y="350" width="200" height="90" rx="16" fill="#172b52" stroke="#527cff" stroke-width="1.5"/><text x="678" y="385" class="num">06</text><text x="720" y="386" class="cardTitle">K 近邻</text><text x="678" y="413" class="cardSub">距离与局部投票</text></a>
+  <a href="../07_K%E5%9D%87%E5%80%BC%E8%81%9A%E7%B1%BB/07_kmeans.ipynb"><rect x="540" y="485" width="200" height="90" rx="16" fill="#172b52" stroke="#527cff" stroke-width="1.5"/><text x="568" y="520" class="num">07</text><text x="610" y="521" class="cardTitle">K 均值</text><text x="568" y="548" class="cardSub">无监督与聚类</text></a>
+
+  <a href="../08_%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B/08_credit_card_default_ml.ipynb"><rect x="930" y="215" width="210" height="90" rx="16" fill="#153d5c" stroke="#2bc0c7" stroke-width="1.5"/><text x="958" y="250" class="num">08</text><text x="1000" y="251" class="cardTitle">综合案例</text><text x="958" y="278" class="cardSub">统一评估与校准</text></a>
+  <a href="../09_%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/09_ensemble.ipynb"><rect x="1160" y="215" width="210" height="90" rx="16" fill="#153d5c" stroke="#2bc0c7" stroke-width="1.5"/><text x="1188" y="250" class="num">09</text><text x="1230" y="251" class="cardTitle">集成学习</text><text x="1188" y="278" class="cardSub">Bagging · Boosting</text></a>
+  <a href="../10_PCA%E4%B8%8E%E9%99%8D%E7%BB%B4/10_pca.ipynb"><rect x="930" y="350" width="210" height="90" rx="16" fill="#153d5c" stroke="#2bc0c7" stroke-width="1.5"/><text x="958" y="385" class="num">10</text><text x="1000" y="386" class="cardTitle">PCA 与降维</text><text x="958" y="413" class="cardSub">表示与压缩</text></a>
+  <a href="../11_%E6%A0%B8%E6%96%B9%E6%B3%95/11_kernel_methods.ipynb"><rect x="1160" y="350" width="210" height="90" rx="16" fill="#153d5c" stroke="#2bc0c7" stroke-width="1.5"/><text x="1188" y="385" class="num">11</text><text x="1230" y="386" class="cardTitle">核方法</text><text x="1188" y="413" class="cardSub">非线性特征空间</text></a>
+  <a href="../12_%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B%E4%B8%8E%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9/12_feature_engineering.ipynb"><rect x="930" y="485" width="210" height="90" rx="16" fill="#153d5c" stroke="#2bc0c7" stroke-width="1.5"/><text x="958" y="520" class="num">12</text><text x="1000" y="521" class="cardTitle">特征工程</text><text x="958" y="548" class="cardSub">Pipeline · 选择 · 调参</text></a>
+  <a href="../13_%E7%BB%BC%E5%90%88%E9%A1%B9%E7%9B%AE/13_ml_all_models.ipynb"><rect x="1160" y="485" width="210" height="90" rx="16" fill="#153d5c" stroke="#2bc0c7" stroke-width="1.5"/><text x="1188" y="520" class="num">13</text><text x="1230" y="521" class="cardTitle">综合项目</text><text x="1188" y="548" class="cardSub">表格数据全流程</text></a>
+  <a href="../14_%E9%87%91%E8%9E%8D%E5%9B%9E%E5%BD%92/14_btc_return_regression.ipynb"><rect x="1160" y="600" width="230" height="90" rx="16" fill="url(#active)" filter="url(#shadow)"/><text x="1188" y="635" class="num">14</text><text x="1230" y="636" class="cardTitle">金融回归</text><text x="1188" y="663" class="cardSub">滚动样本外验证</text></a>
+
+  <rect x="80" y="640" width="1010" height="190" rx="20" fill="#121e33" stroke="#9a6a2b" stroke-width="1.5" stroke-dasharray="8 7"/>
+  <text x="115" y="682" class="archiveTitle">归档专题 · 15–17</text>
+  <text x="115" y="708" class="archiveSub">主线完成后按兴趣开启，内容保留并可恢复</text>
+  <a href="../archive/15_%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/15_fashion_mnist.ipynb"><rect x="115" y="738" width="275" height="62" rx="13" fill="#4a351b" stroke="#e7a548" stroke-width="1" stroke-dasharray="5 4"/><text x="140" y="765" class="archiveTitle">15 · 图像分类</text><text x="140" y="787" class="archiveSub">Fashion-MNIST</text></a>
+  <a href="../archive/16_%E9%87%8F%E5%8C%96ML/16_quant_ml_factor.ipynb"><rect x="420" y="738" width="275" height="62" rx="13" fill="#4a351b" stroke="#e7a548" stroke-width="1" stroke-dasharray="5 4"/><text x="445" y="765" class="archiveTitle">16 · 量化 ML</text><text x="445" y="787" class="archiveSub">因子与回测</text></a>
+  <a href="../archive/17_%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/17_text_classification.ipynb"><rect x="725" y="738" width="275" height="62" rx="13" fill="#4a351b" stroke="#e7a548" stroke-width="1" stroke-dasharray="5 4"/><text x="750" y="765" class="archiveTitle">17 · 文本分类</text><text x="750" y="787" class="archiveSub">TF-IDF 与垃圾短信</text></a>
+
+  <text x="80" y="865" class="footer">蓝色：当前主线　·　青色：工程与项目　·　橙色虚线：暂时归档　·　点击卡片打开 Notebook</text>
+</svg>
