@@ -18,7 +18,13 @@ FILES = [
     "t10k-images-idx3-ubyte.gz",
     "t10k-labels-idx1-ubyte.gz",
 ]
-OUT_DIR = Path(__file__).resolve().parents[1] / "15_图像分类" / "data" / "fashion"
+OUT_DIR = (
+    Path(__file__).resolve().parents[1]
+    / "archive"
+    / "15_图像分类"
+    / "data"
+    / "fashion"
+)
 
 
 def main() -> None:
