@@ -2,7 +2,18 @@
 
 > Machine Learning From First Principles · 从零推导与动手实现的 ML Notebook 系列
 
-一套面向量化求职与工程实践的机器学习学习笔记：每个章节一个独立 notebook，先讲原理再动手实现，并配有数据与实战案例（金融回归、图像分类、量化因子、文本分类）。
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-1f883d)
+
+一套从零推导经典机器学习算法的系列 Notebook：每个章节一个独立 notebook，先讲原理，再手写实现，最后与成熟库（scikit-learn / XGBoost）对照验证；并配有可直接运行的数据与实战案例。
+
+## 项目特点
+
+- **从零推导**：算法背后的数学原理逐步展开，不跳步
+- **手写实现 + 库对照**：每个模型先用 NumPy 手写，再与 scikit-learn / XGBoost 结果对比
+- **开箱即用**：数据随仓库提供（小数据入库，Fashion-MNIST 提供下载脚本），克隆后即可运行
+- **量化金融实战**：含 BTC 收益率回归、量化因子建模、信用卡违约分类等金融场景案例
 
 ## 学习路径
 
@@ -46,7 +57,14 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-建议 Python 3.10+。
+- 建议 Python 3.10+
+- 第 15 章（图像分类）需要先获取 Fashion-MNIST 数据：
+
+```bash
+python scripts/download_fashion_mnist.py
+```
+
+notebook 已保存运行结果，可直接在 GitHub 上浏览；本地重新运行即可复现。
 
 ## 数据说明
 
@@ -57,6 +75,18 @@ jupyter notebook
 | 15 | Fashion-MNIST | 29.4 MB | ⬜ 不入库 · 运行 `python scripts/download_fashion_mnist.py` 获取 |
 | 16 | 量化因子数据 | 0.8 MB | ✅ 入库 |
 | 17 | 文本分类语料 | 0.5 MB | ✅ 入库 |
+
+## 数据来源
+
+| 章节 | 数据集 | 来源 | 许可 |
+|------|--------|------|------|
+| 08 | Default of Credit Card Clients | UCI Machine Learning Repository | CC BY 4.0 |
+| 14 | BTC 历史价格 | Coin Metrics（公开数据） | 公开 |
+| 15 | Fashion-MNIST | zalandoresearch/fashion-mnist | MIT |
+| 16 | 股票价格数据 | QuantConnect/Lean（GitHub 官方仓库） | 见 Lean 仓库 |
+| 17 | SMS Spam Collection | UCI（经 pycon-2016-tutorial 整理） | 公开 |
+
+> 08 章的本地 CSV 由官方 XLS 机械转换，转换细节与校验见 `08_综合案例/data/SOURCE.md`。
 
 ## 目录结构
 
@@ -74,3 +104,5 @@ ML/
 ## 许可
 
 MIT License · © 2026 Aayloo
+
+欢迎 Star、Fork 与 Issue 交流，一起把机器学习原理讲清楚。
