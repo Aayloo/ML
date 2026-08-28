@@ -16,3 +16,4 @@ Thumbs.db
 
 # 大数据集（公开数据不入库，运行 scripts/download_fashion_mnist.py 获取）
 15_图像分类/data/fashion/
+17_文本分类/data/sms.tsv

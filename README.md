@@ -59,6 +59,7 @@ jupyter notebook
 
 - 建议 Python 3.10+
 - 第 15 章（图像分类）需要先获取 Fashion-MNIST 数据：
+- 第 17 章（文本分类）的数据会在运行时自动从公开地址下载：
 
 ```bash
 python scripts/download_fashion_mnist.py
@@ -74,7 +75,7 @@ notebook 已保存运行结果，可直接在 GitHub 上浏览；本地重新运
 | 14 | BTC 价格数据 | 2.4 MB | ✅ 入库 |
 | 15 | Fashion-MNIST | 29.4 MB | ⬜ 不入库 · 运行 `python scripts/download_fashion_mnist.py` 获取 |
 | 16 | 量化因子数据 | 0.8 MB | ✅ 入库 |
-| 17 | 文本分类语料 | 0.5 MB | ✅ 入库 |
+| 17 | 短信分类语料 | 0.5 MB | ⬜ 不入库 · 由 notebook 自动下载 |
 
 ## 数据来源
 
