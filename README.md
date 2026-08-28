@@ -118,4 +118,4 @@ python scripts/download_fashion_mnist.py
 
 ## Quantitative Strategist Flagship Project
 
-The repository now includes [15 Alpha Signal Research](15_Alpha_Signal_Research/), a reproducible research framework for Momentum, Reversal, Volatility, and Liquidity signals with walk-forward ML, portfolio construction, transaction costs, risk metrics, and research reports.
+The learning repository is complemented by the separate [Alpha Signal Research](https://github.com/Aayloo/Alpha-Signal-Research) flagship project for Quantitative Strategist preparation: Momentum, Reversal, Volatility, and Liquidity signals with walk-forward ML, portfolio construction, transaction costs, risk metrics, and research reports.
