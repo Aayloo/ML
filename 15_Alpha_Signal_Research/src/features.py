@@ -29,7 +29,6 @@ def build_features(market_data: pd.DataFrame, config: dict | None = None) -> pd.
 
     frame = market_data.sort_values(["asset", "date"]).copy()
     grouped_close = frame.groupby("asset", sort=False)["close"]
-    grouped_volume = frame.groupby("asset", sort=False)["volume"]
     daily_return = grouped_close.pct_change()
 
     raw_features = pd.DataFrame(index=frame.index)

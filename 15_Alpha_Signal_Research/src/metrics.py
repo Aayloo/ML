@@ -46,3 +46,28 @@ def performance_summary(returns: pd.Series, periods_per_year: int = 252) -> dict
         "sharpe": sharpe,
         "max_drawdown": float(drawdown.min()),
     }
+
+
+def quantile_spread(
+    frame: pd.DataFrame,
+    n_quantiles: int = 5,
+    signal_col: str = "signal",
+    target_col: str = "forward_return",
+) -> pd.Series:
+    """Return top-quantile minus bottom-quantile forward returns by date."""
+    if n_quantiles < 2:
+        raise ValueError("n_quantiles must be at least 2")
+    spreads: list[float] = []
+    dates: list[pd.Timestamp] = []
+    for date, group in frame.groupby("date", sort=True):
+        clean = group[[signal_col, target_col]].dropna().sort_values(signal_col)
+        if len(clean) < n_quantiles:
+            continue
+        buckets = np.minimum(
+            (np.arange(len(clean)) * n_quantiles // len(clean)), n_quantiles - 1
+        )
+        clean = clean.assign(_bucket=buckets)
+        bucket_returns = clean.groupby("_bucket")[target_col].mean()
+        spreads.append(float(bucket_returns.iloc[-1] - bucket_returns.iloc[0]))
+        dates.append(pd.Timestamp(date))
+    return pd.Series(spreads, index=pd.DatetimeIndex(dates), name="quantile_spread", dtype=float)

@@ -115,3 +115,7 @@ python scripts/download_fashion_mnist.py
 ## 许可
 
 本项目采用 [MIT License](LICENSE)。欢迎通过 Issue 反馈错误、补充案例或提出学习建议。
+
+## Quantitative Strategist Flagship Project
+
+The repository now includes [15 Alpha Signal Research](15_Alpha_Signal_Research/), a reproducible research framework for Momentum, Reversal, Volatility, and Liquidity signals with walk-forward ML, portfolio construction, transaction costs, risk metrics, and research reports.

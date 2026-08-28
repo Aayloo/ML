@@ -1,0 +1,12 @@
+{
+  "horizon": 5,
+  "momentum_lookback": 21,
+  "reversal_lookback": 5,
+  "volatility_lookback": 21,
+  "liquidity_lookback": 21,
+  "n_quantiles": 5,
+  "cost_bps": 5.0,
+  "train_size": 252,
+  "test_size": 21,
+  "step": 21
+}
